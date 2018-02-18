@@ -20,6 +20,16 @@ public class Selenium_Jenkins_Integration {
 		searchBox.sendKeys("porsche" +Keys.ENTER);
 		//Thread.sleep(2000);
 		Assert.assertTrue(driver.getTitle().contains("porsche"));
+		if (driver.getTitle().contains("porsche")){
+			System.out.println("test01: Passed");
+			System.out.println("expected title contains: porsche ");
+			System.out.println("actual title: "+ driver.getTitle());
+		}
+		else{
+			System.out.println("test01: Failed");
+			System.out.println("expected title DO NOT contains: porsche ");
+			System.out.println("actual title: "+ driver.getTitle());
+		}
 		System.out.println("--------------------------------------------------------------------------------------------");
 	}
 	
@@ -30,6 +40,7 @@ public class Selenium_Jenkins_Integration {
 		driver=new ChromeDriver();
 		driver.navigate().to("http://www.google.com");
 		//driver.manage().window().maximize();
+		System.out.println("--------------------------------------------------------------------------------------------");
 		System.out.println("-- System test initiated --");
 		System.out.println("--------------------------------------------------------------------------------------------");
 
