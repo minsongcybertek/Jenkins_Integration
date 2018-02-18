@@ -1,0 +1,1 @@
+java -cp "C:\Users\CybertekStudent\workspace\Jenkins_Git_Demo\bin";"C:\Java_WorkSpace\selenium_dependencies\libraries\selenium-java-3.9.1\libs\*";"C:\Java_WorkSpace\selenium_dependencies\libraries\selenium-java-3.9.1\*";"C:\Java_WorkSpace\selenium_dependencies\libraries\*";"C:/Users/CybertekStudent/.p2/pool/plugins/*" org.testng.TestNG testng.xml
